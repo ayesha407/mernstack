@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayesha Gudimetla | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color:white;
+}
+
+/* Navigation */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    background:rgba(0,0,0,0.2);
+}
+
+nav h2{
+    font-size:22px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+/* Hero Section */
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    padding:60px 20px;
+}
+
+.hero img{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    margin:20px;
+}
+
+.hero-text{
+    max-width:500px;
+    margin:20px;
+}
+
+.hero-text h1{
+    font-size:40px;
+}
+
+.hero-text p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+/* Sections */
+section{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.box{
+    background:white;
+    color:black;
+    margin:20px auto;
+    padding:25px;
+    width:80%;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+h2{
+    margin-bottom:15px;
+}
+
+.skills span{
+    display:inline-block;
+    background:#4facfe;
+    color:white;
+    padding:8px 15px;
+    margin:5px;
+    border-radius:20px;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#222;
+    margin-top:20px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .hero{
+        flex-direction:column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav>
+    <h2>My Portfolio</h2>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero">
+    <img src=""C:\Users\ayesh\OneDrive\Desktop\PHOTO11.jpeg"" alt="Ayesha Photo">
+    <div class="hero-text">
+        <h1>Ayesha Gudimetla</h1>
+        <p>Computer Science Student | Java & Web Developer</p>
+        <p>I enjoy solving coding problems and building modern web applications.</p>
+    </div>
+</div>
+
+<!-- Skills -->
+<section>
+    <div class="box skills">
+        <h2>Skills</h2>
+        <span>Java</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+    </div>
+</section>
+
+<!-- Projects -->
+<section>
+    <div class="box">
+        <h2>Projects</h2>
+        <p>✔ Duplicate Removal in Java</p>
+        <p>✔ Longest Consecutive Sequence Program</p>
+        <p>✔ Wastewater Turbidity Removal using Natural Coagulants</p>
+    </div>
+</section>
+
+<!-- Contact -->
+<section>
+    <div class="box">
+        <h2>Contact</h2>
+        <p>Email: yourmail@gmail.com</p>
+        <p>GitHub: github.com/yourprofile</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Ayesha Gudimetla | All Rights Reserved
+</footer>
+
+</body>
+</html>

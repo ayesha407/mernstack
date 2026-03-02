@@ -1,0 +1,10 @@
+import Child from "./Child"
+const Parent=()=>{
+    const getData=(data)=(
+        console.log("Received from child:",data)
+    )
+    return(
+        <div>Child send={gatData}</div>
+    )
+    }
+ export default Parent
