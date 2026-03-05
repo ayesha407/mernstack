@@ -1,6 +1,6 @@
 import User from "./components/User";
-import State from "./State";
-import Form from "./Form";
+import State from "./hooks/State";
+import Form from "./hooks/Form";
 
 const App = () => {
   return (
