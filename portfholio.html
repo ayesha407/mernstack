@@ -3,183 +3,331 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ayesha Gudimetla | Portfolio</title>
+<title>Ayesha Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Inter;
+scroll-behavior:smooth;
 }
 
 body{
-    background: linear-gradient(to right, #4facfe, #00f2fe);
-    color:white;
+background:#020617;
+color:white;
 }
 
-/* Navigation */
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 50px;
-    background:rgba(0,0,0,0.2);
-}
+/* HERO */
 
-nav h2{
-    font-size:22px;
-}
-
-nav ul{
-    list-style:none;
-    display:flex;
-}
-
-nav ul li{
-    margin-left:20px;
-}
-
-nav ul li a{
-    text-decoration:none;
-    color:white;
-    font-weight:bold;
-}
-
-/* Hero Section */
 .hero{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-wrap:wrap;
-    padding:60px 20px;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
 }
 
-.hero img{
-    width:200px;
-    height:200px;
-    border-radius:50%;
-    object-fit:cover;
-    border:5px solid white;
-    margin:20px;
+.hero h1{
+font-size:60px;
+background:linear-gradient(90deg,#a855f7,#3b82f6);
+-webkit-background-clip:text;
+color:transparent;
 }
 
-.hero-text{
-    max-width:500px;
-    margin:20px;
+.hero p{
+margin-top:20px;
+color:#cbd5f5;
 }
 
-.hero-text h1{
-    font-size:40px;
-}
+/* SECTIONS */
 
-.hero-text p{
-    margin-top:10px;
-    font-size:18px;
-}
-
-/* Sections */
 section{
-    padding:40px 20px;
-    text-align:center;
-}
-
-.box{
-    background:white;
-    color:black;
-    margin:20px auto;
-    padding:25px;
-    width:80%;
-    border-radius:10px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+padding:100px 10%;
 }
 
 h2{
-    margin-bottom:15px;
+font-size:40px;
+margin-bottom:40px;
 }
 
-.skills span{
-    display:inline-block;
-    background:#4facfe;
-    color:white;
-    padding:8px 15px;
-    margin:5px;
-    border-radius:20px;
+/* SKILLS */
+
+.skill{
+margin-bottom:20px;
 }
 
-/* Footer */
-footer{
-    text-align:center;
-    padding:20px;
-    background:#222;
-    margin-top:20px;
+.bar{
+background:#111;
+height:10px;
+border-radius:20px;
+overflow:hidden;
 }
 
-/* Responsive */
-@media(max-width:768px){
-    .hero{
-        flex-direction:column;
-    }
+.progress{
+height:10px;
+background:linear-gradient(90deg,#a855f7,#3b82f6);
+width:0;
+transition:2s;
 }
+
+/* CARDS */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#0f172a;
+padding:30px;
+border-radius:12px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px #7c3aed;
+}
+
+/* TIMELINE */
+
+.timeline{
+border-left:2px solid #7c3aed;
+padding-left:20px;
+}
+
+.timeline div{
+margin-bottom:30px;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+.button{
+display:inline-block;
+margin-top:20px;
+padding:12px 30px;
+background:#7c3aed;
+border-radius:8px;
+text-decoration:none;
+color:white;
+}
+
+.button:hover{
+background:#9333ea;
+}
+
+/* SCROLL ANIMATION */
+
+.reveal{
+opacity:0;
+transform:translateY(60px);
+transition:1s;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
 </style>
 </head>
 
 <body>
 
-<!-- Navigation -->
-<nav>
-    <h2>My Portfolio</h2>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
+<!-- HERO -->
 
-<!-- Hero Section -->
-<div class="hero">
-    <img src=""C:\Users\ayesh\OneDrive\Desktop\PHOTO11.jpeg"" alt="Ayesha Photo">
-    <div class="hero-text">
-        <h1>Ayesha Gudimetla</h1>
-        <p>Computer Science Student | Java & Web Developer</p>
-        <p>I enjoy solving coding problems and building modern web applications.</p>
-    </div>
+<section class="hero">
+
+<h1>Gudimetla Ayesha</h1>
+
+<p>Computer Science Engineering Student</p>
+
+<p>Engineering Intelligent Solutions with Curiosity and Code</p>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="reveal">
+
+<h2>My Journey</h2>
+
+<p>
+I am a 3rd year Computer Science Engineering student passionate about problem solving,
+network security and continuous learning. I enjoy building technical solutions and exploring
+new technologies that improve the future of computing.
+</p>
+
+</section>
+
+<!-- SKILLS -->
+
+<section class="reveal">
+
+<h2>Skills & Technologies</h2>
+
+<div class="skill">
+Python
+<div class="bar"><div class="progress" style="width:80%"></div></div>
 </div>
 
-<!-- Skills -->
-<section>
-    <div class="box skills">
-        <h2>Skills</h2>
-        <span>Java</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-    </div>
+<div class="skill">
+HTML
+<div class="bar"><div class="progress" style="width:85%"></div></div>
+</div>
+
+<div class="skill">
+CSS
+<div class="bar"><div class="progress" style="width:80%"></div></div>
+</div>
+
+<div class="skill">
+SQL
+<div class="bar"><div class="progress" style="width:70%"></div></div>
+</div>
+
 </section>
 
-<!-- Projects -->
-<section>
-    <div class="box">
-        <h2>Projects</h2>
-        <p>✔ Duplicate Removal in Java</p>
-        <p>✔ Longest Consecutive Sequence Program</p>
-        <p>✔ Wastewater Turbidity Removal using Natural Coagulants</p>
-    </div>
+<!-- EDUCATION -->
+
+<section class="reveal">
+
+<h2>Education</h2>
+
+<div class="timeline">
+
+<div>
+<h3>B.Tech CSE</h3>
+<p>Madanapalle Institute of Technology</p>
+<p>CGPA: 8.8</p>
+</div>
+
+<div>
+<h3>Intermediate</h3>
+<p>Akshara Junior College</p>
+<p>98.2%</p>
+</div>
+
+<div>
+<h3>Matriculation</h3>
+<p>Z.P.H.S Viruvuru</p>
+<p>100%</p>
+</div>
+
+</div>
+
 </section>
 
-<!-- Contact -->
-<section>
-    <div class="box">
-        <h2>Contact</h2>
-        <p>Email: yourmail@gmail.com</p>
-        <p>GitHub: github.com/yourprofile</p>
-    </div>
+<!-- PROJECT -->
+
+<section class="reveal">
+
+<h2>Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Cyber Shield</h3>
+
+<p>
+Network security project where I performed a campus security audit
+and implemented VLAN segmentation, hybrid VPNs, ACLs,
+and IDS/IPS monitoring using Cisco Packet Tracer.
+</p>
+
+</div>
+
+</div>
+
 </section>
 
-<footer>
-    © 2026 Ayesha Gudimetla | All Rights Reserved
-</footer>
+<!-- ACHIEVEMENTS -->
+
+<section class="reveal">
+
+<h2>Achievements & Certifications</h2>
+
+<div class="grid">
+
+<div class="card">Oracle Generative AI Professional</div>
+
+<div class="card">Data Structures & Algorithms – Coursera</div>
+
+<div class="card">Big Data Computing – NPTEL</div>
+
+<div class="card">Intellectual Property Rights – NPTEL</div>
+
+</div>
+
+</section>
+
+<!-- INTERESTS -->
+
+<section class="reveal">
+
+<h2>Interests</h2>
+
+<div class="grid">
+
+<div class="card">Problem Solving</div>
+<div class="card">Painting</div>
+<div class="card">Playing Games</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact reveal">
+
+<h2>Let's Connect</h2>
+
+<p>Email: ayeshagudimetla@gmail.com</p>
+
+<a class="button" href="mailto:ayeshagudimetla@gmail.com">
+Contact Me
+</a>
+
+</section>
+
+<script>
+
+window.addEventListener("scroll", function(){
+
+let reveals=document.querySelectorAll(".reveal");
+
+for(let i=0;i<reveals.length;i++){
+
+let windowHeight=window.innerHeight;
+
+let revealTop=reveals[i].getBoundingClientRect().top;
+
+let revealPoint=150;
+
+if(revealTop < windowHeight - revealPoint){
+
+reveals[i].classList.add("active");
+
+}
+
+}
+
+});
+
+</script>
 
 </body>
 </html>
