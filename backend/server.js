@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
 const connectDB=require('./config/db')
-
+require("dotenv").config();
 app.use(express.json())
 
 connectDB()
